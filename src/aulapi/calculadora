@@ -1,0 +1,19 @@
+public String modelo = "Meu modelo";
+    public String marca = "Minha marca";
+ 
+    public void somar(double a, double b) {
+        this.resultado = a + b;
+    }
+ 
+    public void multiplicar(double a, double b) {
+        this.resultado = a * b;
+    }
+ 
+    public void dividir(double a, double b) {
+        this.resultado = a / b;
+    }
+ 
+    public void subtrair(double a, double b) {
+        this.resultado = a - b;
+ 
+    }
