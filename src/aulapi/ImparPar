@@ -12,17 +12,19 @@ public class ImparPar {
         
         Scanner leitor = new Scanner(System.in);
         
-        System.out.println("Escreva um numero");
+        System.out.print("Jogador Um Escreva um numero: ");        
+        int jg1 = leitor.nextInt();
         
-        int numero = leitor.nextInt();
+        System.out.print("Jogador Dois Escreva um numero: ");        
+        int jg2 = leitor.nextInt();
         
-        if (numero % 2 == 0){
+        if (jg1 % 2 == 0){
             
-            System.out.println("Seu número é par");
+            System.out.println("Par ganhou");
         
         }else{
             
-            System.out.println("Seu número é inpar");
+            System.out.println("Impar ganhou");
         }
         
         
