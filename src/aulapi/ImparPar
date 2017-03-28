@@ -1,0 +1,31 @@
+
+package exerciciopi;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author upper
+ */
+public class ImparPar {
+    public static void main(String[]args){
+        
+        Scanner leitor = new Scanner(System.in);
+        
+        System.out.println("Escreva um numero");
+        
+        int numero = leitor.nextInt();
+        
+        if (numero % 2 == 0){
+            
+            System.out.println("Seu número é par");
+        
+        }else{
+            
+            System.out.println("Seu número é inpar");
+        }
+        
+        
+       
+    }
+}
