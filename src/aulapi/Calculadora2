@@ -1,0 +1,48 @@
+
+package exerciciopi;
+
+import java.util.Scanner;
+
+public class Calculadora {
+    public static void main(String[]args){
+        
+        Scanner leitor = new Scanner(System.in);
+        
+        double N1, N2, simbolo, a = 1 , b = 2, c = 3 , d = 4, R;
+        
+        
+        System.out.print("Digite um Numero: ");
+        N1 = leitor.nextDouble();
+        
+        System.out.print("Digite outro Numero: ");
+        N2 = leitor.nextDouble();
+        
+        System.out.print("Qual operação deseja?\n soma = 1,  divisao = 2 , subtracao = 3 , multiplicacao = 4, : ");
+        
+        simbolo = leitor.nextDouble();
+       
+        
+        if (simbolo == 1  ){
+            
+            R = N1 + N2;
+            System.out.println("Resultado: "+R);
+                   
+        }else if  (simbolo == 2 ){
+            
+            R = N1 / N2;
+            System.out.println("Resultado: "+R);
+        
+        }else if  (simbolo == 3 ){
+            
+            R = N1 - N2;
+            System.out.println("Resultado: "+R);
+        
+    }if (simbolo == 4) {
+            
+            R = N1 * N2;
+            System.out.println("Resultado: "+R);
+
+    
+    }
+}
+}
