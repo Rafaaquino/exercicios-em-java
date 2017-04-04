@@ -14,11 +14,11 @@ public class SwitchCaseComIF {
         int temperatura;
         String tipo;
         
-        System.out.println("Qual material ira transportar\n"
+        System.out.println("Qual material ira transportar\n\n"
                 + "A - Congelado\n"
                 + "B - perecivel \n"
                 + "C - Refrigerado \n"
-                + "D - Frios");
+                + "D - Frios\n");
         System.out.println("Digite a letra correspondente: ");
         tipo = leitor.next();
         
@@ -29,8 +29,9 @@ public class SwitchCaseComIF {
             
             case "A":
             case "a":
-                if(temperatura == 10 || temperatura <= 17){
+                if(temperatura >= 10 && temperatura <= 17){
                     System.out.println("Você pode tranportar conosco! ");
+                    
                 }else{
                
                     System.out.println("Você está fora dos parametros de tranporte! ");
@@ -39,7 +40,7 @@ public class SwitchCaseComIF {
             
             case "B":
             case "b":
-                if(temperatura == 11 || temperatura <= 16){
+                if(temperatura >= 11 && temperatura <= 16){
                     System.out.println("Você pode tranportar conosco! ");
                 }else{
                 
@@ -49,7 +50,7 @@ public class SwitchCaseComIF {
             
             case "C":
             case "c":
-                if(temperatura == 12 || temperatura <= 15){
+                if(temperatura >= 12 && temperatura <= 15){
                     System.out.println("Você pode tranportar conosco! ");
                 }else{
                 
@@ -59,7 +60,7 @@ public class SwitchCaseComIF {
             
             case "D":
             case "d":
-                if(temperatura == 13 || temperatura <= 14){
+                if(temperatura >= 13 && temperatura <= 14){
                     System.out.println("Você pode tranportar conosco! ");
                 }else{
                 
