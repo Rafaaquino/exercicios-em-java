@@ -1,0 +1,50 @@
+
+package aulapi;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author rafael.eraquino
+ */
+public class Letra {
+    public static void main(String [] args){
+        Scanner leitor = new Scanner(System.in);
+        
+        String letra;
+        
+        System.out.println("Digite um aletra para saber se é conseante ou vogal: ");
+        letra = leitor.next();
+        
+        switch(letra.toUpperCase()){
+            case "A":
+                System.out.println("Letra A é uma vogal");
+            break;
+            
+            case "E":
+                System.out.println("Letra E é uma vogal");
+            break;   
+            
+            case "I":
+                System.out.println("Letra I é uma vogal");
+            break;
+            
+            case "O":
+                System.out.println("Letra O é uma vogal");
+            break;
+            
+            case "U":
+                System.out.println("Letra U é uma vogal");
+            break;
+            
+            default:
+                System.out.printf("Letra %s é uma consoante",letra);       
+        
+        
+        }
+        
+        
+        
+        
+    }
+}
