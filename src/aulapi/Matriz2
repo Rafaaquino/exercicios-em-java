@@ -1,0 +1,74 @@
+
+package Matriz;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author rafael.eraquino
+ */
+public class ExeMatriz {
+    
+    static Scanner leitor = new Scanner(System.in);
+    
+    public static void main(String[] args) {
+        
+       int linha = tamanho();
+       int coluna = tamanho();
+       int[][] matriz = matriz(linha, coluna);
+       matriz = preencheMatriz(matriz);
+        imprimiMatriz(matriz);
+        
+    }
+    
+    
+    static int tamanho(){
+        System.out.println("Linha e coluna: ");
+        int a = leitor.nextInt();
+        
+        return a;       
+    }
+    
+    static int[][] matriz(int linha, int coluna){
+        
+        System.out.println("Cria Matriz");
+        int[][] matriz = new int[linha][coluna];
+        
+        return matriz;
+    }
+    
+    static int[][] preencheMatriz(int[][] matriz){
+        System.out.println("preenche a Mariz");
+        
+        for(int i = 0; i < matriz.length; i++){
+            for(int j = 0; j< matriz.length; j++){
+                if(i == j){
+                    
+                    matriz[i][j] = 0;
+                }
+                else if ((i+j) == (matriz.length -1)){
+                    matriz[i][j] = 1;
+                }
+                else{
+                    matriz[i][j] = 2;
+                }
+                
+            }
+            
+            
+        }
+        
+        return matriz;
+        
+    }
+    
+    static void imprimiMatriz(int[][] matriz){
+        for (int i = 0; i < matriz.length; i ++){
+            
+            for (int j = 0; j < matriz[i].length; j++){
+                System.out.printf("Matriz [%d][%d]: %d \n", i ,j, matriz[i][j]);
+            }
+            
+        }
+    }
+}

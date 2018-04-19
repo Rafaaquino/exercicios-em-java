@@ -1,0 +1,44 @@
+public class Temperatura_tipo {
+    public static void main(String[] args) {
+        Scanner leia = new Scanner (System.in);
+        String a,b,c,d,t;
+        double temp;
+        
+        System.out.print("Digite o tipo(A,B,C ou D): ");
+        t = leia.nextLine();
+        
+        System.out.print("Digite a temperatura: ");
+        temp = leia.nextDouble();
+        
+        switch (t){
+            case "a":
+             if(temp>=10 && temp<=17)
+                    System.out.print("Pode transportar");
+             else{System.out.print("Não pode transportar");
+             }
+             break;
+            case "b":
+                if(temp>=11 && temp<=16)
+                    System.out.print("Pode transportar");
+                else{System.out.print("Não pode transportar");}
+                break;
+            case "c":
+                if(temp>=12 && temp<=15)
+                    System.out.print("Pode transportar");
+                else{System.out.print("Não pode transportar");
+                }
+                break;
+            case "d":
+                if(temp>=13 && temp<=14)
+                    System.out.print("Pode transportar");
+                else{System.out.print("Não pode trasnportar");
+                }
+                break;
+            
+            
+        }
+        
+        
+    }
+ 
+}

@@ -1,0 +1,43 @@
+public class TratamentodeerroPI {
+
+    public static void main(String[] args) {
+        Scanner console = new Scanner (System.in);
+        
+        double temp =0;
+        
+        
+        boolean valido = false;
+        do{
+            try{
+        System.out.print("Temperatura: ");
+        temp = Double.parseDouble(console.nextLine());
+        valido = true;
+        } catch(NumberFormatException ex){
+            System.out.println("Temperatura Inválida !! tente novamente");
+        }
+        }  while (!valido);
+      
+             
+        double temp2 = 0;
+        boolean valido1 = false;
+        do{
+            try{
+        System.out.print("Temperatura: ");
+        temp2 = Double.parseDouble(console.nextLine());
+        valido = true;
+        } catch(NumberFormatException ex){
+            System.out.println("Temperatura Inválida !! tente novamente");
+        }
+        }  while (!valido);
+        
+        double temp1 = soma(temp, temp2);
+        
+        System.out.println("Temperatura1: "+temp);
+        System.out.println("Temperatura2: "+temp2);
+        System.out.println(temp1);
+    }
+
+ public static double soma(double t1, double t2) {
+       return t1 + t2 ;
+     }
+ }

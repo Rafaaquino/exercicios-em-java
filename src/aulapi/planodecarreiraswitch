@@ -1,0 +1,46 @@
+public static void main(String[] args) {
+        Scanner leia = new Scanner (System.in);
+        String nome, nivel;
+        double hr, salario;
+        
+        System.out.print("Digite o nome do funcionário: ");
+        nome = leia.nextLine();
+        
+        System.out.print("Digite o nível do funcionário: ");
+        nivel = leia.nextLine();
+        
+        System.out.print("Digite a quantidade de horas trabalhadas: ");
+        hr = leia.nextDouble();
+        
+        switch(nivel){
+            case "1":
+                salario= hr*15.00;
+                System.out.print("O funcionário "+nome+" trabalhou "+hr+" horas por R$: "+15.00+" e seu salário será: "+salario );
+                break;
+            case "2":
+                salario = hr*18.00;
+                System.out.print("O funcionário "+nome+" trabalhou "+hr+" horas por R$: "+18.00+" e seu salário será: "+salario );
+                break;
+            case "3":
+                salario = hr *22.00;
+                System.out.print("O funcionário "+nome+" trabalhou "+hr+" horas por R$: "+22.00+" e seu salário será: "+salario);
+                break;
+            case "4":
+                salario = hr * 27.00;
+                System.out.print("O funcionário "+nome+" trabalhou "+hr+" horas por R$: "+27.00+"e seu salário será:"+salario);
+                break;
+            case "5":
+                salario = hr* 33.00;
+                System.out.print("O funcionário "+nome+" trabalhou "+hr+" horas por R$: "+33.00+"e seu salário será:"+salario);
+                break;
+            default:
+                System.out.print("ERROR 404");
+                
+                
+        }
+        
+        
+        
+    }
+  
+}

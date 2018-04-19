@@ -1,0 +1,25 @@
+package expi;
+// escreva um programa que pede um login e uma senha e valide a autorização de acordo com a seguinte tabela: usuário guilherme senha 0f5 
+
+import java.util.Scanner;
+
+public class EXPi {
+    public static void main(String[] args) {
+    String  login, senha;
+      Scanner leia = new Scanner (System.in);
+        System.out.print("Digite um login: ");
+        login = leia.nextLine();
+        System.out.print("Digite a senha: ");
+        senha = leia.nextLine();
+        
+        if ("Guilherme".equals(login)&& "0f5".equals(senha)){
+        System.out.print("Está autorizado!! ");
+      }else if ("Jair".equals(login)&&"0706".equals(senha)){
+            System.out.print("Está autorizado!!");
+                    }else System.out.print("Não está autorizado");
+    
+
+
+    }}
+    
+

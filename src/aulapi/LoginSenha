@@ -1,0 +1,37 @@
+
+package aulapi;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author rafael.eraquino
+ */
+public class LoginSenha {
+    public static void main(String[]args){
+        
+        Scanner leitor = new Scanner(System.in);
+        
+        String login;
+        String senha;
+        
+        System.out.println("Digite o login");
+        login = leitor.nextLine();
+        
+        System.out.println("Digite a senha");
+        senha = leitor.nextLine();
+        
+        boolean autorizado = (login.equals("guilherme") && senha.equals("0f5")) || (login.equals("jair") && senha.equals("0706"));             
+                
+        if (autorizado){
+        
+            System.out.println("Acesso Autorizado");
+            
+        }else {
+        
+            System.out.println("Acesso Negado!");
+        }
+        
+        
+    }
+}

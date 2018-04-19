@@ -1,0 +1,44 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package switchcase;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author upper
+ */
+public class SwitchCase6 {
+    public static void main(String[]args){
+        Scanner leitor = new Scanner(System.in);
+        
+        int n1;
+        
+        
+        System.out.println("Digite o número de um dia da semana: ");
+        n1 = leitor.nextInt();
+        
+        switch(n1){
+            case 1:
+            case 7: 
+                System.out.println("Final de semana");
+                break;
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+            case 6:    
+                System.out.println("Dia de semana ");
+                break; 
+            default:
+                System.out.println("número inválido! ");
+            
+        }
+        
+        
+        
+    }
+}

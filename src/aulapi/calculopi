@@ -1,0 +1,17 @@
+package expi;//Escreva um algoritmo que calcula um valor aproximado para \pi usando a série desenvolvida por Leibniz (dica: você irá precisar calcular a série com pelo menos 10000 termos).
+
+
+public class valor_pi {
+    public static void main(String[] args) {
+       double n = 1;
+       int sinal =1;
+       double soma = 0;
+            for (int i = 1; i<= 10000; i ++){
+                soma = soma + sinal*1/n;
+                n= n+2;
+                sinal = -sinal;
+              
+        }
+        System.out.print("Resultado "+ 4*soma);
+    }
+}

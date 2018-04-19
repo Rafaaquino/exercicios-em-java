@@ -1,0 +1,16 @@
+public static void main(String[] args) {
+        Scanner leia = new Scanner (System.in);
+        double n1;
+        System.out.print("Digite um número : ");
+        n1 = leia.nextDouble();
+        double r = n1*2;
+        
+        if(n1>=1 && n1<=12){
+            System.out.println("O número é válido: "+r);
+        }
+         else {System.out.println("Inválido");
+        }
+        
+    }
+    
+}

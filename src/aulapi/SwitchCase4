@@ -1,0 +1,70 @@
+
+package switchcase;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author upper
+ */
+public class SwitchCase4 {
+    public static void main(String []args){
+        Scanner leitor = new Scanner(System.in);
+        
+        int mes, ano;
+        
+        System.out.print("Digite o número de um mês para saber a quantidade de dias dele: ");
+        mes = leitor.nextInt();
+        
+        System.out.print("Digite o ano: ");
+        ano = leitor.nextInt();
+        
+        switch(mes){
+            
+            case 1:
+                System.out.printf("Janeiro de %d - 31 dias",ano);
+                break;
+            case 3:
+                System.out.printf("Março de %d - 31 dias",ano);
+                break;
+            case 5:
+                System.out.printf("Maio de %d - 31 dias",ano);
+                break;
+            case 7:
+                System.out.printf("Julho de %d - 31 dias",ano);
+                break;
+            case 8:
+                System.out.printf("Agosto de %d - 31 dias",ano);
+                break;
+            case 10:
+                System.out.printf("Outubro de %d - 31 dias",ano);
+                break;
+            case 12:                
+                System.out.printf("Dezembro de %d - 31 dias",ano);
+                break;
+                
+            case 2:
+                System.out.printf("Fevereiro de %d - 28 dias",ano);
+                break;
+            
+            case 4:
+                System.out.printf("Abril de %d - 30 dias",ano);
+                break;
+            case 6:
+                System.out.printf("Junho de %d - 30 dias",ano);
+                break;
+            case 9:
+                System.out.printf("Setembro de %d - 30 dias",ano);
+                break;    
+            case 11:
+                System.out.printf("Novembro de %d - 30 dias",ano);
+                break;    
+            
+            default:    
+               System.out.printf("Número inválido");
+               
+        }
+                 
+        
+    }
+}

@@ -1,0 +1,46 @@
+package switchcase;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author upper
+ */
+public class SwitchCase7 {
+    public static void main(String[]args){
+        Scanner leitor = new Scanner(System.in);
+        
+        int idade, r ;
+        int V = 100;
+        
+        System.out.println("Para saber o valor do plano de saúde \n Digita sua idade:");
+     
+        
+        idade = leitor.nextInt();
+        
+        if (idade <= 10){
+            
+            r = V + 80;
+            System.out.println("O valor do seu plano será: "+r);
+        
+        }else if(idade == 10 || idade <= 30){
+            
+            r = V + 50;
+            System.out.println("O valor do seu plano será: "+r);
+            
+        }else if(idade == 40 || idade <= 60){
+            
+            r = V + 95;
+            System.out.println("O valor do seu plano será: "+r);
+            
+        }else if(idade > 60){
+            
+            r = V + 130;
+            System.out.println("O valor do seu plano será: "+r);
+            
+        
+        }else{System.out.println("O valor errado"); }
+
+    
+    }
+}

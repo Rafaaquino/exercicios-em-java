@@ -1,0 +1,95 @@
+public static void main(String[] args) {
+            
+             Scanner leitor = new Scanner (System.in);
+             Random aleatorio = new Random ();
+             
+             int n [] = {20};
+             String alternativa = "";
+             
+             int  pergunta = 0, questao =0, tentativas = 3 , pontos = 0 ;
+             
+             boolean resposta = false;
+             do{
+                 
+             questao = aleatorio.nextInt(20);
+              if(questao==1){  
+                System.out.println(" !!pergunta!! " + "\n");
+
+                System.out.println("Qual o nome do primeiro avião de Santos Dumont? ");
+
+                System.out.println("A- Bis ");
+                System.out.println("B- verme ");
+                System.out.println("C- avião do forró");
+                System.out.println("D- A bunda do Rafael" + "\n");
+                System.out.println("RESPOSTA !" );
+                 
+                 
+               
+                alternativa = leitor.next();
+
+                switch(alternativa){
+
+                  case "a":
+
+                        resposta = true;
+                        pontos = pontos + 30;
+                        System.out.println("resposta correta ");
+                        System.out.println("pontos: "+pontos);
+                        break;
+                  case "b":
+                      System.out.println("Resposta .......... !!ERRADA!! ");
+                                    tentativas = tentativas - 1;                        
+                                    break;
+                  case "c":
+                      System.out.println("Resposta .......... !!ERRADA!! ");
+                                    tentativas = tentativas - 1;                        
+                                    break;
+                  case "d":    
+                        System.out.println("Resposta .......... !!ERRADA!! ");
+                        tentativas = tentativas - 1;
+                  break;                 
+
+                  default:
+                        System.out.println("Essa alternativa não existe "); 
+                }
+                
+        
+        }
+             if(questao == 2){
+                    System.out.println(" !!pergunta!! " + "\n");
+
+                            System.out.println("Toronto é uma cidade de qual país? ");
+
+                            System.out.println("A- China ");
+                            System.out.println("B- Rússia ");
+                            System.out.println("C- Canadá ");
+                            System.out.println("D- Austrália" + "\n");
+                            System.out.println("RESPOSTA !" );
+
+                            alternativa = leitor.next();
+
+                            switch(alternativa){
+
+                              case "a":
+                                  System.out.println("Resposta .......... !!ERRADA!! ");
+                                    tentativas = tentativas - 1;                        
+                                    break;
+                              case "b":
+                                  System.out.println("Resposta .......... !!ERRADA!! ");
+                                    tentativas = tentativas - 1;                        
+                                    break;
+                              case "c":
+                                    resposta = true;
+                                    pontos = pontos + 30;
+                                    System.out.println("resposta correta ");
+                                    System.out.println("pontos: "+pontos);
+                                    break;
+                              case "d":
+                                    System.out.println("Resposta .......... !!ERRADA!! ");
+                                    tentativas = tentativas - 1; 
+                              break;                 
+
+                              default:
+                                    System.out.println("Essa alternativa não existe "); 
+                            } } }while(tentativas>0);
+                     }}

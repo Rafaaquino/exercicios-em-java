@@ -1,0 +1,133 @@
+static int resposta = 0;
+    static int pontos = 90;
+    static Scanner leitor = new Scanner(System.in);
+    
+    public static void main(String[] args) {
+        
+        int a = pergunta();
+        int b = opcao(a);
+        imprimiPonto();
+        zeraResposta();
+        
+        int c = pergunta2();
+        int d = opcao2(a);
+        imprimiPonto();
+        zeraResposta();
+        
+    }
+    
+    static int pergunta(){
+        int num = 1;       
+        System.out.println("Pergunta 1");
+        System.out.println("");
+        System.out.println("Qual o valor de PI");
+        System.out.println("");
+        System.out.println("1 - 3,14");
+        System.out.println("2 - 5,55");
+        System.out.println("3 - 10,14");
+        System.out.println("4 - 13,04");
+        
+        System.out.print("Resposta: ");
+        resposta = leitor.nextInt();
+        
+        return resposta;
+    }
+    
+    static int pergunta2(){
+        int num = 2;       
+        
+        System.out.println("Pergunta 2");
+        System.out.println("");
+        System.out.println("Quem descobriu o brasil");
+        System.out.println("");
+        System.out.println("1 - borba gato");
+        System.out.println("2 - pedro alvares");
+        System.out.println("3 - julio cesar");
+        System.out.println("4 - colombo");
+        
+        System.out.print("Resposta: ");
+        resposta = leitor.nextInt();
+        
+        return resposta;
+    }
+    
+    static int opcao(int a){
+          
+        switch (resposta){
+            
+            case 1:
+                System.out.println("Resposta correta!");
+                pontos = pontos + 30; 
+                break;
+            case 2:
+            case 3:
+            case 4:    
+                System.out.println("Resposta errada");
+                
+            pontos = pontos - 30;    
+            
+        }
+        
+        return resposta;
+        
+    }
+    
+    static int opcao2(int a){
+          
+        switch (resposta){
+            
+            case 2:
+                System.out.println("Resposta correta!");
+                pontos = pontos + 30; 
+                break;
+            case 1:
+            case 3:
+            case 4:    
+                System.out.println("Resposta errada");
+                
+            pontos = pontos - 30;    
+            
+        }
+        
+        return resposta;
+        
+    }
+    
+    static int zeraResposta(){
+        
+        resposta = 0;
+        
+        return resposta;        
+    }
+    
+    static void imprimiPonto(){
+        
+        System.out.println("Seus pontos: "+pontos);
+        
+    }
+
+    static void repeticao(){
+        
+        for(int i = 0; i >0; i++){
+            
+            pergunta();
+            pergunta2();
+            
+        }
+        
+    }
+    
+    static int[] vetor(int[] jaRespondeu){
+        
+        jaRespondeu = new int[20];
+        
+        return jaRespondeu;
+    }
+    
+    static int  verificacao(int a){
+        
+        if (a == jaRespondeu[1]){
+            
+        }
+        
+    }

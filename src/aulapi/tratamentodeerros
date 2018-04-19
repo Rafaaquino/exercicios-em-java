@@ -1,0 +1,13 @@
+    public static void main(String[] args) {
+        Scanner console = new Scanner (System.in);
+        try{
+        System.out.print("Temperatura: ");
+        double temp = Double.parseDouble(console.nextLine());
+        
+        System.out.println(temp);
+      
+      }catch(NumberFormatException ex){
+            System.out.println("Temperatura Inválida");
+}
+    }
+}

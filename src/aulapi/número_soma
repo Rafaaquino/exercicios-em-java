@@ -1,0 +1,28 @@
+//Escreva um programa   que lê um número e mostra a soma dos seus dígitos: EX: n=2017 n=10
+package expi;
+
+import java.util.Scanner;
+
+public class número_soma {
+    public static void main(String[] args) {
+        Scanner leia = new Scanner (System.in);
+        //entrada
+        String  n;
+        int soma = 0;
+        
+        System.out.print("Digite um número: ");
+        n = leia.nextLine();
+        //processamento
+        for (int i=0; i < n.length() ; i = i+1) {
+         
+            String digito= n.substring(i, i+1);
+            int x = Integer.parseInt(digito);
+                  soma = soma + x ;
+          
+        }
+          System.out.print("Soma: "+ soma);  
+        
+        
+    }
+  
+}

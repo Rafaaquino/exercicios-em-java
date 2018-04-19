@@ -1,0 +1,11 @@
+public static void main(String[] args) {
+        String centro = "x";
+        
+       
+        
+        
+        System.out.println("   |   |   ");
+        System.out.println("---+---+---");
+        System.out.println("   | "+ centro + " |   ");
+        System.out.println("---+---+---");
+        System.out.println("   |   |   ");

@@ -1,0 +1,33 @@
+
+package aulalogicaprogamacao;
+
+/**
+ *
+ * @author rafael.eraquino
+ */
+public class SwitchCase {
+    public static void main(String[]args){
+        
+        char grande ='c';
+        
+        switch(grande){
+            
+            case 'a':
+                System.out.println("Excelente!");
+                break;
+            case 'b':
+            case 'c':
+                System.out.println("Bem feito!");
+                break;    
+            case 'd':
+                System.out.println("Você passou");
+                break; 
+            case 'e':
+                System.out.println("Melhor tentar novamente");
+                break;
+            default:    
+                System.out.println("Melhor tentar novamente");
+        }
+        
+    }
+}
